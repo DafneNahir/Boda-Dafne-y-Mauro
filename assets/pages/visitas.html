@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es-ar">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <link rel="stylesheet" href="../styles/style.css">
+    <title>Boda Dafne & Mauro - Visitas</title>
+</head>
+
+<body>
+    <header>
+        <!-- <nav class="encabezado">
+            <img class="dym" src="../img/DM.png" alt="dym" title="D&M">
+            <ul class="paginas">
+                <li><a href="../../index.html">Inicio</a></li>
+                <li><a href="../pages/fotos.html">Fotos</a></li>
+                <li><a href="../pages/eventos.html">Eventos</a></li>
+                <li><a href="../pages/confirmacion.html">Confirmación</a></li>
+                <li><a href="../pages/visitas.html">Visitas</a></li>
+            </ul>
+        </nav> -->
+
+        <nav class="navbar navbar-expand-lg bg-body-tertiary encabezado"> <!-- Nav de Bootstrap con class agregada -->
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">
+                   <img class="dym" src="../img/DM.png" alt="dym" title="D&M"> 
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="../../index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../pages/fotos.html">Fotos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../pages/eventos.html">Eventos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../pages/confirmacion.html">Confirmación</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../pages/visitas.html">Visitas</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <section class="box-titulo-index">
+            <h1 class="titulo-index">Nos casamos!</h1>
+            <article class="info-index">
+                <p>15 de Marzo de 2025</p>
+                <p>Tandil, Buenos Aires</p>
+            </article>
+        </section>
+    </header>
+
+    <main>
+        <h2>Visitas</h2>
+        <p class="txt-paginas">Te invitamos a contagiarnos de amor y alegría firmando nuestro libro de visitas, así que dejá un mensaje. ¡Gracias por dejarnos tu cariño!</p>
+        <section class="msj-visita">
+            <form action="/submit" method="post">
+                <article>
+                    <input type="text" name="nombre" id="nombre" class="msj" placeholder="Nombre">
+                </article>
+                <article>
+                    <textarea name="mensaje" id="mensaje" class="msj" placeholder="Mensaje"></textarea>
+                </article>
+                <article>
+                    <input type="submit" value="Enviar" class="msj-enviar hvr-float-shadow">
+                </article>                
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <h2>Dafne & Mauro</h2>
+        <p>Copyright 2025. All rights Reserved</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
+</body>
+
+</html>
