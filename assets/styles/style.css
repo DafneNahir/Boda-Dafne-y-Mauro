@@ -196,6 +196,7 @@ h2:hover {
 .hvr-bob:focus,
 .hvr-bob:active {
     font-size: 2em;
+    font-family: Fleur De Leah;
     -webkit-animation-name: hvr-bob-float, hvr-bob;
     animation-name: hvr-bob-float, hvr-bob;
     -webkit-animation-duration: .3s, 1.5s;
@@ -503,5 +504,17 @@ h3 {
         font-size: 0.9em;
         margin-left: 5%;
         margin-right: 5%;
+    }
+
+    .box-evento{
+        justify-content: center;
+    }
+
+    .txt-paginas{
+        font-size: 1em;
+    }
+
+    .foto{
+        width: 40vw;
     }
 }
