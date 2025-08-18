@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Fleur+De+Leah&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+/* VARIABLES */
+
+$fuente1: "Fleur De Leah";
+$fuente2: "Playfair Display";
+
+$colorPrimario: #fad4d9;
+$colorSecundario: #f8e9eb;
+
+@mixin mobile {
+    @media (min-width: 200px) and (max-width: 480px) {
+        @content;
+    }
+};
+
+@mixin tablet {
+    @media (min-width: 481px) and (max-width: 768px) {
+        @content;
+    }
+};
+
+* {
+    padding: 0;
+};
+
+.body {
+    font-family: $fuente2;
+};
+
+div {
+    font-family: $fuente2;
+};
+
+h2 {
+    font-family: $fuente2;
+    text-align: center;
+    font-size: 2.5em;
+    &:hover {      // ANIMACIÓN
+        font-size: 3em;
+    }
+    @include tablet {
+        font-size: 1.5em;
+    }
+}
+
+.txt-paginas {
+    text-align: center;
+    font-size: 1.5em;
+    margin-left: 10%;
+    margin-right: 10%;
+    @include tablet {
+        font-size: 1em;
+    }
+    @include mobile {
+        font-size: 1em;
+    }
+}

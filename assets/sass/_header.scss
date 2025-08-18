@@ -1,0 +1,92 @@
+@use "variables" as v;
+
+/* HEADER */
+
+.encabezado {
+    display: flex;
+    background-color: v.$colorPrimario !important; /* utilicé el !important solo para pisar el background de Bootstrap*/
+    position: fixed;
+    top: 0;
+    width: 100%;
+    .dym {
+        width: 5vw;
+        height: auto;
+        text-align: left;
+        @include v.tablet {
+            width: 8vw;
+        }
+    } 
+    .navbar-nav {
+        text-align: right;
+    }
+    @include v.mobile {
+        align-items: center;
+    }
+}
+
+.box-titulo-index {
+    margin-top: 7vh;
+    display: grid;
+    grid-template-areas:
+        "titulo-index titulo-index . . . . . info-index"
+        "titulo-index titulo-index . . . . . info-index";
+    justify-items: center;
+    @include v.tablet {
+        align-items: baseline;
+        margin-top: 18vh;
+    }
+    @include v.mobile {
+        font-size: 1.5em;
+        grid-template-areas:
+            "titulo-index titulo-index"
+            " . info-index";
+    }
+    .titulo-index {
+        display: grid;
+        grid-area: titulo-index;
+        font-size: 6em;
+        font-family: v.$fuente1;
+        font-weight: 300;
+        margin: 5vw 3vh;
+        @include v.tablet {
+            font-size: 3em;
+            text-align: center;
+            width: 100%;
+            margin-left: 0;
+            width: 100%;
+            margin: 0;
+        }
+        @include v.mobile {
+            font-size: 2.5em;
+            margin-top: 12vh;
+        }
+    }
+    .info-index {
+        grid-area: info-index;
+        text-align: right;
+        align-content: center;
+        @include v.tablet {
+            width: 100%;
+            text-align: center;
+            margin-right: 0;
+        }
+        @include v.mobile {
+            font-size: 0.5em;
+        }
+        .fecha-index {
+            display: grid;
+            grid-area: fecha-index;
+        }
+        .lugar-index {
+            display: grid;
+            grid-area: lugar-index;
+        }
+        p {
+            @include v.tablet {
+                font-size: 0.8em;
+            }
+        }
+    }
+}
+
+

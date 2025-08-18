@@ -1,0 +1,130 @@
+@use "variables" as v;
+
+/* INDEX */
+
+.imagenes-index {
+    background-color: v.$colorSecundario;
+    border-radius: 5px;
+    display: flex;
+    place-items: center;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    @include v.mobile {
+        margin-top: 20px;
+    }
+    .pareja {
+        margin: 10px;
+        width: 300px;
+        @include v.mobile {
+            width: 75%;
+            margin: 3vw;
+        }
+    }
+}
+
+.bienvenida {
+    text-align: justify;
+    margin: 50px;
+    @include v.tablet {
+        margin: 30px 10px;
+    }
+    .titulo-bienvenida {
+        text-align: center;
+        font-size: 4em;
+        font-family: v.$fuente1;
+        font-weight: 300;
+        @include v.tablet {
+            font-size: 2em;
+        }
+        @include v.mobile {
+            font-size: 3em;
+        }
+    }
+    .txt-bienvenida {
+        text-align: center;
+        font-size: 1.2em;
+        margin-left: 20%;
+        margin-right: 20%;
+        @-webkit-keyframes hvr-bob {    // ANIMACIÓN
+            0% {
+                -webkit-transform: translateY(-8px);
+                transform: translateY(-8px);
+            }
+            50% {
+                -webkit-transform: translateY(-4px);
+                transform: translateY(-4px);
+            }
+            100% {
+                -webkit-transform: translateY(-8px);
+                transform: translateY(-8px);
+            }
+        }
+        @keyframes hvr-bob {
+            0% {
+                -webkit-transform: translateY(-8px);
+                transform: translateY(-8px);
+            }
+            50% {
+                -webkit-transform: translateY(-4px);
+                transform: translateY(-4px);
+            }
+            100% {
+                -webkit-transform: translateY(-8px);
+                transform: translateY(-8px);
+            }
+        }
+        @-webkit-keyframes hvr-bob-float {
+            100% {
+                -webkit-transform: translateY(-8px);
+                transform: translateY(-8px);
+            }
+        }
+        @keyframes hvr-bob-float {
+            100% {
+                -webkit-transform: translateY(-8px);
+                transform: translateY(-8px);
+            }
+        }
+        .hvr-bob {
+            display: inline-block;
+            vertical-align: middle;
+            -webkit-transform: perspective(1px) translateZ(0);
+            transform: perspective(1px) translateZ(0);
+            box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+        }
+        .hvr-bob:hover,
+        .hvr-bob:focus,
+        .hvr-bob:active {
+            font-size: 2em;
+            font-family: Fleur De Leah;
+            -webkit-animation-name: hvr-bob-float, hvr-bob;
+            animation-name: hvr-bob-float, hvr-bob;
+            -webkit-animation-duration: .3s, 1.5s;
+            animation-duration: .3s, 1.5s;
+            -webkit-animation-delay: 0s, .3s;
+            animation-delay: 0s, .3s;
+            -webkit-animation-timing-function: ease-out, ease-in-out;
+            animation-timing-function: ease-out, ease-in-out;
+            -webkit-animation-iteration-count: 1, infinite;
+            animation-iteration-count: 1, infinite;
+            -webkit-animation-fill-mode: forwards;
+            animation-fill-mode: forwards;
+            -webkit-animation-direction: normal, alternate;
+            animation-direction: normal, alternate;
+        }
+        @include v.tablet {
+            font-size: 1em;
+            margin-left: 5%;
+            margin-right: 5%;
+        }
+        @include v.mobile {
+            font-size: 0.9em;
+            margin-left: 5%;
+            margin-right: 5%;
+        }
+    }
+}
+
+
+

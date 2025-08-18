@@ -1,0 +1,48 @@
+@use "variables" as v;
+
+/* FOTOS */
+
+h3 {
+    font-family: v.$fuente2;
+    text-align: center;
+    font-size: 1.5em;
+    @include v.tablet {
+        font-size: 1em;
+    }
+}
+
+.box-foto {
+    display: flex;
+    place-items: center;
+    justify-content: center;
+    align-items: center;
+    flex-flow: wrap;
+    .carousel-inner {
+        z-index: -1;  // Utilizado solo por la imporatción de Bootstrap
+        .carousel-item {
+            text-align: center;
+            img {
+                margin: 0 auto;
+                display: block;
+                margin: 10px;
+                width: 30vw;
+                @include v.tablet {
+                    width: 40vw;
+                }
+                @include v.mobile {
+                    width: 60vw;
+                }
+            }
+        }
+    }
+    .foto {
+        margin: 10px;
+        width: 30vw;
+        @include v.tablet {
+            width: 40vw;
+        }
+        @include v.mobile {
+            width: 60vw;
+        }
+    }
+}
