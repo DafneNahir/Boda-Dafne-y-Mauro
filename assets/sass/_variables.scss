@@ -45,7 +45,7 @@ h2 {
     }
 }
 
-.txt-paginas {
+%efecto {
     text-align: center;
     font-size: 1.5em;
     margin-left: 10%;
@@ -56,4 +56,4 @@ h2 {
     @include mobile {
         font-size: 1em;
     }
-}
+};

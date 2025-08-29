@@ -15,6 +15,9 @@
         @include v.tablet {
             width: 8vw;
         }
+        @include v.mobile {
+            width: 10vw;
+        }
     } 
     .navbar-nav {
         text-align: right;

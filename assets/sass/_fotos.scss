@@ -2,6 +2,10 @@
 
 /* FOTOS */
 
+.txt-paginas {
+    @extend %efecto;
+}
+
 h3 {
     font-family: v.$fuente2;
     text-align: center;
